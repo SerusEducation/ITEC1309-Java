@@ -4,6 +4,7 @@ public class Student {
 
 	private String code;
 	private String name;
+	private String tel;
 	private int age;
 
 	public String getCode() {
@@ -22,6 +23,14 @@ public class Student {
 		this.name = name;
 	}
 
+	public String getTel() {
+		return tel;
+	}
+
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+	
 	public int getAge() {
 		return age;
 	}
@@ -43,7 +52,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [code=" + code + ", name=" + name + ", age=" + age + "]";
+		return "Student [code=" + code + ", name=" + name + ", tel=" + tel + ", age=" + age + "]";
 	}
 	
 }

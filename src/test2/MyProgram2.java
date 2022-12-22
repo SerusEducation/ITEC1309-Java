@@ -1,39 +1,16 @@
 package test2;
 
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class MyProgram2 {
 
 	public static void main(String[] args) {
 		
-		final int number = 3;
-		Scanner sc = new Scanner(System.in);
-		ArrayList<Student> students = new ArrayList<Student>();
+		Student std1 = new Student();
+		std1.setName("Kittisak");
+		std1.setCode("6314110006");
+		std1.setAge(20);
 		
-		for (int i = 0; i < number; i++) {
-			System.out.println("Student [" + (i + 1) + "]");
-			Student student = new Student();
-			
-			System.out.print("code: ");
-			student.setCode(sc.nextLine());
-			System.out.print("name: ");
-			student.setName(sc.nextLine());
-			System.out.print("age: ");
-			student.setAge(sc.nextInt());
-			sc.nextLine();
-			
-			students.add(student);
-		}
-
-		sc.close();
-		
-		System.out.println("========= Result Print =========");
-
-		for (int i = 0; i < number; i++) {
-			System.out.println(students.get(i));
-		}
-		
+		System.out.println(std1.toString());
 
 	}
 
